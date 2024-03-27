@@ -7,8 +7,8 @@
     "type": "git",
     "url": "https://github.com/flyerhq/react-native-chat-ui.git"
   },
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
   "author": "Oleksandr Demchenko <alexdemchenko@yahoo.com>",
   "contributors": [
     "Vitalii Danylov <vitaliidanylov1992@gmail.com>",
@@ -25,13 +25,13 @@
     "typescript"
   ],
   "files": [
-    "lib"
+    "src"
   ],
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-    "compile": "rm -rf lib && tsc -p . && copyup src/assets/*.png lib",
+    "compile": "rm -rf src && tsc -p . && copyup src/assets/*.png src",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "prepare": "yarn compile",
     "test": "jest",
